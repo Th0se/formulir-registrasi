@@ -20,18 +20,19 @@ body {
 
 #logo {
     position: absolute;
-    top: 30%;
+    top: 20%;
     width: 100%;
     height: 15%;
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.425);
 }
 
 #logoImage {
     background-image: url(assets/odin-lined.png);
     background-size: 100% 100%;
-    height: 100%;
-    width: 20%;
+    height: 98%;
+    width: 17%;
 }
 
 #logoWords {
@@ -48,9 +49,10 @@ body {
 #credit {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    top: 99%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 #credit a {
@@ -65,12 +67,80 @@ body {
 #content {
     width: 60%;
     height: 100vh;
-    position: relative;
 }
 
 #warning {
-    position: absolute;
-    top: 0;
-    height: 50%;
+    position: relative;
+    height: 33%;
     width: 100%;
+    background-color: rgba(46, 41, 41, 0.178);
+    margin: 0;
+}
+
+#warning-1,
+#warning-2 {
+    margin: 0 5%;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#warning-1 {
+    position: absolute;
+    bottom: 20%;
+}
+
+#warning-2 {
+    position: absolute;
+    bottom: 5%;
+}
+
+#sign-up {
+    height: 33%;
+    margin: 0;
+}
+
+h1,
+form {
+    margin: 2% 10%;
+}
+
+form {
+    position: relative;
+    height: 100%;
+}
+
+.form-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-block-1 {
+    top: 0;
+    left: 0;
+}
+
+#form-block-2 {
+    top: 0;
+    left: 35%;
+}
+
+#form-block-3 {
+    top: 50%;
+    left: 0;
+}
+
+#form-block-4 {
+    top: 50%;
+    left: 35%;
+}
+
+#form-block-5 {
+    top: 100%;
+    left: 0;
+}
+
+#form-block-6 {
+    top: 100%;
+    left: 35%;
 }
