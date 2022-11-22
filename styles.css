@@ -49,7 +49,7 @@ body {
 #credit {
     position: absolute;
     width: 100%;
-    top: 99%;
+    bottom: 0%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -126,21 +126,31 @@ form {
 }
 
 #form-block-3 {
-    top: 50%;
+    top: 33%;
     left: 0;
 }
 
 #form-block-4 {
-    top: 50%;
+    top: 33%;
     left: 35%;
 }
 
 #form-block-5 {
-    top: 100%;
+    top: 66%;
     left: 0;
 }
 
 #form-block-6 {
-    top: 100%;
+    top: 66%;
     left: 35%;
+}
+
+form > input {
+    position: absolute;
+    top : 99%;
+    left: 0;
+    font-size: large;
+    background-color: #596D45;
+    padding: 1rem 4rem;
+    border-radius: 10%;
 }
