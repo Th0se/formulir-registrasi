@@ -105,44 +105,37 @@ form {
 }
 
 form {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#container {
     position: relative;
     height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .form-block {
-    position: absolute;
     display: flex;
     flex-direction: column;
+    overflow: visible;
+    flex-basis: 40%;
 }
 
-#form-block-1 {
-    top: 0;
-    left: 0;
+#container input:valid {
+    border-color: green;
 }
 
-#form-block-2 {
-    top: 0;
-    left: 35%;
+#container input:invalid {
+    border-color: red;
 }
 
-#form-block-3 {
-    top: 33%;
-    left: 0;
-}
-
-#form-block-4 {
-    top: 33%;
-    left: 35%;
-}
-
-#form-block-5 {
-    top: 66%;
-    left: 0;
-}
-
-#form-block-6 {
-    top: 66%;
-    left: 35%;
+#container input:focus {
+    border-color: blue;
 }
 
 form > input {
