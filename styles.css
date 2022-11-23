@@ -1,0 +1,149 @@
+@font-face {
+    font-family: norseBold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+#picture {
+    background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    font-size: norseBold;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#logoImage {
+    background-image: url(assets/odin-lined.png);
+    background-size: 100% 100%;
+    height: 98%;
+    width: 17%;
+}
+
+#logoWords {
+    height: 100%;
+    font-size: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+#logoWords p {
+    margin: 0;
+}
+
+#credit {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#credit a {
+    text-decoration: none;
+    color: white;
+}
+
+#credit a:visited {
+    color: white;
+}
+
+#content {
+    width: 60%;
+    height: 100vh;
+}
+
+#warning {
+    position: relative;
+    height: 33%;
+    width: 100%;
+    background-color: rgba(46, 41, 41, 0.178);
+    margin: 0;
+}
+
+#warning-1,
+#warning-2 {
+    margin: 0 5%;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#warning-1 {
+    position: absolute;
+    bottom: 20%;
+}
+
+#warning-2 {
+    position: absolute;
+    bottom: 5%;
+}
+
+#sign-up {
+    height: 33%;
+    margin: 0;
+}
+
+h1,
+form {
+    margin: 2% 10%;
+}
+
+form {
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    flex-basis: 40%;
+}
+
+#container input:valid {
+    border-color: green;
+}
+
+#container input:invalid {
+    border-color: red;
+}
+
+#container input:focus {
+    border-color: blue;
+}
+
+form > input {
+    position: absolute;
+    top : 99%;
+    left: 0;
+    font-size: large;
+    background-color: #596D45;
+    padding: 1rem 4rem;
+    border-radius: 10%;
+}
