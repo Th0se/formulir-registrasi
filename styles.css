@@ -3,142 +3,145 @@
     src: url(assets/Norse-Bold.otf);
 }
 
+a:hover {
+    color: blue !important;
+}
+
 body {
     display: flex;
     margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: grey;
 }
 
 #picture {
     background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    width: 40%;
+    width: 675px;
     height: 100vh;
     position: relative;
     font-size: norseBold;
-    color: white;
-    font-size: 4rem;
+    color: aliceblue;
 }
 
 #logo {
     position: absolute;
-    top: 20%;
-    width: 100%;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.692);
     height: 15%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.425);
+    align-items: center;
 }
 
 #logoImage {
     background-image: url(assets/odin-lined.png);
     background-size: 100% 100%;
-    height: 98%;
-    width: 17%;
+    height: 90%;
+    width: 15%;
 }
 
-
-#logoWords p {
-    margin: 0;
+#logoWords {
+    font-size: 4rem;
+    font-family: norseBold;
 }
 
 #credit {
     position: absolute;
+    text-align: center;
+    bottom: 0;
     width: 100%;
-    bottom: 0%;
     display: flex;
     justify-content: center;
-    text-align: center;
+    font-size: 1.5rem;
 }
 
 #credit a {
+    color: aliceblue;
     text-decoration: none;
-    color: white;
 }
 
 #credit a:visited {
-    color: white;
+    color: aliceblue;
 }
 
 #content {
-    width: 60%;
+    width: 675px;
     height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 #warning {
-    position: relative;
-    height: 33%;
     width: 100%;
-    background-color: rgba(46, 41, 41, 0.178);
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.267);
     margin: 0;
-}
-
-#warning-1,
-#warning-2 {
-    margin: 0 5%;
-    font-weight: bold;
-    font-size: 120%;
-}
-
-#warning-1 {
-    position: absolute;
-    bottom: 20%;
-}
-
-#warning-2 {
-    position: absolute;
-    bottom: 5%;
-}
-
-#sign-up {
-    height: 33%;
-    margin: 0;
-}
-
-h1,
-form {
-    margin: 2% 10%;
-}
-
-form {
-    height: 100%;
-    position: relative;
     display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
-#container {
-    position: relative;
-    height: 100%;
+#warning p {
+    margin: 0 10%;
+    font-size: 1.2rem;
+}
+
+#warning p:last-of-type {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+#signUpForm {
     width: 100%;
+}
+
+#signUpForm > * {
+    margin: 10px 10% 0;
+}
+
+#signUpForm > p {
+    font-size: 1.5rem;
+}
+
+#formBlocks {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.form-block {
+.formBlock {
     display: flex;
     flex-direction: column;
-    overflow: visible;
     flex-basis: 40%;
+    margin-top: 15px;
 }
 
-#container input:valid {
-    border-color: green;
+#submit {
+    margin-top: 20px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 
-#container input:invalid {
-    border-color: red;
+#bottomBox {
+    background-color:rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 20vh;
 }
 
-#container input:focus {
-    border-color: blue;
+#bottomBox > * {
+    margin: 5vh 10%;
+    font-size: 1.25rem;
 }
 
-form > input {
-    position: absolute;
-    top : 99%;
-    left: 0;
-    font-size: large;
-    background-color: #596D45;
-    padding: 1rem 4rem;
-    border-radius: 10%;
+#bottomBox a {
+    color: black;
+    text-decoration: none;
+}
+
+#bottomBox a:visited {
+    color: black;
 }

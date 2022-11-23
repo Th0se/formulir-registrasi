@@ -29,45 +29,52 @@
     </div>
     <div id="content">
         <div id="warning">
-            <p id="warning-1">
-                This is not a real service. 
-                    You know you need something like this
-                    in your life to realise your greatest dream.
-                    Come sign up! You know you want to.
+            <p>This is not a real online service!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Id interdum velit laoreet id donec ultrices tincidunt arcu non.
+                Nulla facilisi cras fermentum odio eu.
+                Tempus quam pellentesque nec nam. 
+                Ornare massa eget egestas purus viverra accumsan in nisl.
             </p>
-            <p id="warning-2">This is a mere demonstration.</p>
+            <p>
+                You know you want it.
+            </p>
         </div>
-        <div id="sign-up">
-            <h1>Let's do it!</h1>
-            <form action="">
-                <div id="container">
-                    <div class="form-block">
-                        <label for="nameFirst">First name</label>
-                        <input id="nameFirst" placeholder="John" type="text" />
+        <div id="signUpForm">
+            <p>Let's do this!</p>
+            <form action="" method="post">
+                <div id="formBlocks">
+                    <div class="formBlock">
+                        <label for="nameFirst">Name</label>
+                        <input type="text" id="name" />
                     </div>
-                    <div class="form-block">
-                        <label for="nameLast">Last name</label>
-                        <input id="nameLast" placeholder="Doe" type="text" />
+                    <div class="formBlock">
+                        <label for="nameLast">Last Name</label>
+                        <input type="text" id="nameLast" />
                     </div>
-                    <div class="form-block">
+                    <div class="formBlock">
                         <label for="email">Email address</label>
-                        <input id="email" placeholder="johndoe@example.org" type="email" />
+                        <input type="email" id="email" />
                     </div>
-                    <div class="form-block">
+                    <div class="formBlock">
                         <label for="phone">Phone number</label>
-                        <input id="phone" placeholder="17744657766" />
+                        <input type="tel" id="phone" />
                     </div>
-                    <div class="form-block">
+                    <div class="formBlock">
                         <label for="passwordNew">Password</label>
-                        <input id="passwordNew" type="password" />
+                        <input type="password" id="passwordNew" />
                     </div>
-                    <div class="form-block">
-                        <label for="passwordConfirm">Password confirmation</label>
-                        <input id="passwordConfirm" type="password" />
+                    <div class="formBlock">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="password" id="passwordConfirm" />
                     </div>
                 </div>
-                <input type="submit" value="create account" />
+                    <input  id="submit" type="submit" value="Sign up" />
             </form>
+        </div>
+        <div id="bottomBox">
+            <p>Already have an account? <a href="">Sign in</a></p>
         </div>
     </div>
 </body>
