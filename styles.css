@@ -126,8 +126,8 @@ body {
 }
 
 #formBlocks input:focus {
-    border-color: blue;
-    box-shadow: 1px blue;
+    outline-color: blue;
+    box-shadow: 2px blue;
 }
 
 .formBlock {
@@ -163,4 +163,8 @@ body {
 
 #bottomBox a:visited {
     color: #596D48;
+}
+
+.error {
+    border-color: red;
 }
