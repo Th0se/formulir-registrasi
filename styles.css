@@ -1,0 +1,166 @@
+@font-face {
+    font-family: norseBold;
+    src: url(assets/Norse-Bold.otf);
+}
+
+a:hover {
+    color: blue !important;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: grey;
+}
+
+#picture {
+    background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    width: 675px;
+    height: 100vh;
+    position: relative;
+    font-size: norseBold;
+    color: aliceblue;
+}
+
+#logo {
+    position: absolute;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoImage {
+    background-image: url(assets/odin-lined.png);
+    background-size: 100% 100%;
+    height: 90%;
+    width: 15%;
+}
+
+#logoWords {
+    font-size: 4rem;
+    font-family: norseBold;
+}
+
+#credit {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#credit a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#credit a:visited {
+    color: aliceblue;
+}
+
+#content {
+    width: 675px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#warning {
+    width: 100%;
+    height: 35vh;
+    background-color: rgba(56, 56, 56, 0.267);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#warning p {
+    margin: 0 10%;
+    font-size: 1.15rem;
+}
+
+#warning p:last-of-type {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+}
+
+#signUpForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(45vh);
+    background-color: rgb(206, 205, 205);
+}
+
+#signUpForm > * {
+    margin: 0 10%;
+}
+
+#signUpForm > p {
+    font-size: 1.5rem;
+}
+
+#formBlocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#formBlocks input:valid {
+    border-color: green;;
+}
+
+#formBlocks input:invalid {
+    border-color: red;
+}
+
+#formBlocks input:focus {
+    border-color: blue;
+    box-shadow: 1px blue;
+}
+
+.formBlock {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    margin-top: 15px;
+}
+
+#submit {
+    margin-top: 20px;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #596D48;
+}
+
+#bottomBox {
+    background-color:rgb(185, 185, 185);
+    width: 100%;
+    height: 20vh;
+}
+
+#bottomBox > * {
+    margin: 0 10%;
+    font-size: 1.25rem;
+}
+
+#bottomBox a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#bottomBox a:visited {
+    color: #596D48;
+}
