@@ -63,11 +63,17 @@
                     </div>
                     <div class="formBlock">
                         <label for="passwordNew">Password</label>
-                        <input type="password" id="passwordNew" />
+                        <input
+                            type="password" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{12,70}$"
+                            id="passwordNew" />
                     </div>
                     <div class="formBlock">
                         <label for="passwordConfirm">Confirm Password</label>
-                        <input type="password" id="passwordConfirm" />
+                        <input 
+                            type="password" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{12,70}$"
+                            id="passwordConfirm" />
                     </div>
                 </div>
                     <input  id="submit" type="submit" value="Sign up" />
@@ -77,7 +83,7 @@
             <p>Already have an account? <a href="">Sign in</a></p>
         </div>
     </div>
-    <script url="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
